@@ -3,10 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Rock paper scissors game</title>
 </head>
 <body>
+
+    <div class="modal">
+        <div class="modal-container">
+            <div class="modal-content">
+                <div class="modal-title">Game Over!</div>
+
+                <button class="play">Play again</button>
+            </div>
+        </div>
+    </div>
+    <div class="text-container">
+        <h1>Rock Paper Scissors!</h1>
+    </div>
+
+    <div class="score">
+        <div class="score-content">
+            <div class="win-status">Game has started!</div>
+            <div class="outcome">highest score at 10 rounds wins</div>
+            <div></div>
+        </div>
+        
+    </div>
+
+    <div class="game-body">
+        <div class="profile-container">
+
+            <div class="human-options">
+                <p class="score human-score">Score:0</p>
+                <img class="img human" src="./images/human-profile.png" alt="">
+                <div class="human-choice">?</div>
+
+            </div>
+           
+
+            <span>VS</span>
+
+            <div class="computer-options">
+                <p class="score computer-score">score:0</p>
+                <img class="img computer" src="./images/computer-profile.png" alt="">
+                <div class="computer-choice">?</div>
+            </div>
+           
+        </div>
+
+
+        <div class="options">
+            <div class="rock">✊</div>
+            <div class="paper">✋</div>
+            <div class="scissors">✌</div>
+        </div>
+
     
+
+   
+    </div>
+   
 
     <script src="app.js"></script>
 </body>

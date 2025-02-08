@@ -1,0 +1,161 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    position: relative;
+    background: url(./images/vaperwave\ arena.jpg);
+    background-repeat: repeat;
+    background-position: center;
+    color: #fff;
+    
+    
+}
+h1{
+    font-size: 5rem;
+    margin-top: 2rem;
+    
+}
+
+.text-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+span{
+    font-size: 5.5rem;
+    font-weight: 900;
+}
+
+.score{
+    margin-top: 0rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.score-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    padding: 2rem;
+    border-radius: 0.8rem;
+    text-shadow: rgb(255, 155, 255) 1px 0 10px;
+
+}
+.outcome {
+ color: #fffffc;
+ text-shadow: rgb(81, 81, 81) 2px 0 10px;
+}
+
+
+.score,.profile-container,.chosen-container,.options-container{
+    width: 100%;
+}
+.profile-container{
+    margin-top: 0rem;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.img{
+    width: 14.5rem;
+    height: auto;
+
+    border-radius: 50%;
+}
+.human-options, .computer-options{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+ .human-choice,.computer-choice {
+    font-size: 3rem;
+    font-weight: bold;
+ }
+
+ .options {
+    display: flex;
+    justify-content: center;
+    font-size: 4rem;
+    gap: 2rem;
+ }
+ .options div {
+    background:rgb(255, 104, 240) ;
+    width: 120px;
+    height: 120px;
+    padding: 2rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5rem;
+    cursor: pointer;
+ }
+ .options div:hover{
+    transition: 0.4s;
+    background:rgb(255, 156, 245);
+ }
+
+ 
+
+/*modal */
+
+.modal {
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: 55%;
+    transform: translate(-50%,-50%);
+    width: 20%;
+    height: 400px;
+    background:  rgba(48, 2, 65, 0.975);
+    border-radius: 2rem;
+   box-shadow: rgb(255, 209, 255) 1px 0 50px;
+   color: white;
+}
+
+.modal-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+  
+    justify-content: center;
+    text-align: center;
+}
+.modal-content{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+   
+
+    
+}
+.modal-title{
+    font-size: 2rem;
+    font-weight: bold;
+    color: red;
+}
+.play{
+    padding: 0.5rem 1.25rem;
+    color: white;
+    align-self: center;
+    cursor: pointer;
+    background: rgb(255, 0, 0);
+    border-bottom: 6px inset rgba(0,0,0,.5);
+	border-left: 6px inset rgba(0,0,0,.5);
+	border-right: 6px inset rgba(255,255,255,.5);
+	border-top: 6px inset rgba(255,255,255,.5);
+}
+.play:hover{
+    background: rgb(249, 81, 81);
+    transition: 0.3s;
+}

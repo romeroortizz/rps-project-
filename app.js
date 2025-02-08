@@ -4,7 +4,7 @@ const gameChoices = ["rock", "paper", "scissors"];
 let rock = document.querySelector('.rock')
 let paper = document.querySelector('.paper')
 let scissors = document.querySelector('.scissors')
-
+const options = document.querySelector('.options')
 const humanOutcome = document.querySelector('.human-choice')
 const computerOutcome = document.querySelector('.computer-choice')
 
@@ -83,9 +83,7 @@ function playRound(humanChoice) {
 function displayModal() {
 
     modal.style.display = 'block'
-    document.querySelector('.rock').style.display = 'none';
-    document.querySelector('.paper').style.display = 'none';
-    document.querySelector('.scissors').style.display = 'none';
+    options.style.display ='none'
     playbtn.addEventListener('click', () =>{
         humanScore = 0;
         computerScore = 0;
@@ -98,9 +96,7 @@ function displayModal() {
         winStatus.textContent = 'New Game Started!'
         outcome.textContent = `Highest score at 10 rounds wins!!!`
 
-        document.querySelector('.rock').style.display = 'block';
-        document.querySelector('.paper').style.display = 'block';
-        document.querySelector('.scissors').style.display = 'block';
+        options.style.display ='flex'
     })
    
 }
